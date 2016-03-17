@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'hacker';
+    src: url('../fonts/hacker.woff2') format('woff2'), url('../fonts/hacker.woff') format('woff');
+}
+
+body {
+    background-color: #333136;
+    overflow-x: hidden;
+    padding-top: 50px;
+    position: relative
+}
+
+.brightness {
+    background-color: white;
+    display: inline-block;
+}
+
+.brightness img {
+    opacity: 1;
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+}
+
+.brightness img:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+#introDiv {
+    padding-top: 10vh;
+}
+
+#skip_button {
+    bottom: 35px;
+    cursor: pointer;
+    font-size: 3em;
+    font-size: 7.5vw;
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10001;
+}
+
+#counterDiv {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.counterTitle {
+    font-size: 4vw;
+}
+
+#mainCounter {
+    color: #FFCD00;
+}
+
+#mainTitle {
+    font-size: 10em;
+    font-size: 12vw;
+}
+
+#subtitle {
+    color: #FFCD00;
+    font-family: freight-sans-pro, Verdana, serif;
+    font-size: 3em;
+    font-size: 3.5vw;
+    margin-bottom: 25px;
+}
+
+#trailer {
+    background: #aaa;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.SVG {
+    height: 50vh;
+    width: 100%;
+}
+
+.menutext {
+    font-family: europa, futura, tahoma, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.navtext {
+    font-family: europa, futura, tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default {
+    background-color: #4D4A51;
+    border-width: 0;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FFCD00;
+}
+/*
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color:#FFCD00;
+    background-color: #DADBD7;
+    
+}
+*/
+
+.center {
+    left: 50%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.headerTitle {
+    color: rgb(218, 219, 215);
+    color: rgba(218, 219, 215, .9);
+    font-size: 6em;
+    font-size: 12vw;
+    left: 50%;
+    position: absolute;
+    top: 35%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.bodycounter {
+    font-family: Brandon Grotesque, josefin-sans, century gothic, century, sans-serif;
+    font-size: 8em;
+    font-size: 16vw;
+    line-height: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.anchor {
+    margin-top: 50vh;
+}
+/*
+.headerimg {}
+
+.navbar {}
+*/
+/*
+.circle {
+    border-radius: 50%;
+    background-color: rgba(14, 178, 175, 0.5);
+    width:100px;
+    height: auto;
+}
+*/
+
+.spacerTop {
+    margin-top: 200px;
+}
+
+.spacerBot {
+    margin-bottom: 200px;
+}
+
+.smallSpacerTop {
+    margin-top: 50px;
+}
+
+.smallSpacerBot {
+    margin-bottom: 50px;
+}
+
+.quote {
+    font-size: 40px;
+}
+
+.scrollquote {
+    font-family: Brandon Grotesque, josefin-sans, century gothic, century, sans-serif;
+    font-size: 2em;
+    font-style: italic
+}
+
+h1 {
+    color: #DADBD7;
+    font-family: hacker;
+    font-size: 6em;
+    font-size: 8vw;
+    text-align: center;
+}
+
+h2 {
+    color: #DADBD7;
+    font-family: europa, Futura PT, Trebuchet MS, Arial, sans-serif;
+    font-size: 3em;
+    font-size: 6vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    color: #DADBD7;
+    font-family: freight-text-pro, georgia, serif;
+    font-size: 1.6em;
+    line-height: 2.5em;
+}
+
+.text::first-letter {
+    color: #FFCD00;
+    font-size: 200%;
+    text-align: justify;
+}
+
+.emphasis {
+    color: #FFCD00;
+    font-size: 150%;
+}
+
+h3 {
+    color: #DADBD7;
+    text-align: center;
+}
+/* If the viewport is larger than 600px */
+
+@media (min-width: 600px) {
+    #skip_button {
+        font-size: 3vw;
+    }
+}
+
+/*If the viewpor is smaller than 950px*/
+@media (max-width: 950px) {
+    .navtext {
+        font-family: europa, futura, tahoma, sans-serif;
+        font-size: .9em;
+    }
+}
+
+
+@media (max-width:768px) {
+
+
+}
+
+@media (min-width:1400px) {
+
+
+}
+
+
+
+
+
+#endingDiv {
+    margin-top: 48vh;
+}
+
+#newyork {
+    background-image: url("../img/cities/newyork.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 600px;
+}
+
+#chicago {
+    background-image: url("../img/cities/chicago.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 600px;
+}
+
+#sanfrancisco {
+    background-image: url("../img/cities/sanfrancisco.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 600px;
+}
+
+#oakland {
+    background-image: url("../img/cities/oakland.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 600px;
+}
+
+.cityText {
+    font-family: europa, futura, tahoma, sans-serif;
+    font-size: 3vw;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.cityHead {
+    left: 35%;
+    position: relative;
+    top: 45%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.cited {
+    font-family: europa, tahoma, sans-serif;
+    font-size: 2.5em;
+    text-align: right;
+        
+}
+
+.videothumb {
+    /*max-height: 200px;*/
+    width:100%;
+}
